@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const basePath = process.env.NODE_ENV === "production" ? "/gfbs3-portfolio-demo" : "";
+const basePath = process.env.NODE_ENV === "production" ? "/My_Portfolio" : "";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
             href="/" 
             className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 hover:to-cyan-400 transition-all duration-300"
           >
-            GITFOLIO
+            Kevin's Portfolio
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PROJECTS</Link>
@@ -71,11 +71,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
             <ProjectCard 
-              title="PROJECT_ONE"
-              description="Your first amazing project goes here. Describe what problem it solves and the tech you used to build it."
-              tags={["REACT", "NEXTJS", "TAILWIND"]}
+              title="My_Project"
+              description="What this project does and why it's awesome."
+              tags={["REACT", "TYPESCRIPT", "API"]}
               color="cyan"
-              href="#"
+              href="https://github.com/kjclark6262/gitfolio" // Replace with your project URL
             />
             {/* Project 2 */}
             <ProjectCard 
